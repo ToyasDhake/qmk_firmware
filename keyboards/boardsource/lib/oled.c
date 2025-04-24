@@ -5,16 +5,25 @@
 void render_layer_state(void) {
     switch (get_highest_layer(layer_state)) {
         case 0:
-            oled_write_raw_P(layer0_img, sizeof(layer0_img));
+            oled_write_ln("Def", false);
             break;
         case 1:
-            oled_write_raw_P(layer1_img, sizeof(layer1_img));
+            oled_write_ln("Med", false);
             break;
         case 2:
-            oled_write_raw_P(layer2_img, sizeof(layer2_img));
+            oled_write_ln("Nav", false);
             break;
         case 3:
-            oled_write_raw_P(layer3_img, sizeof(layer3_img));
+            oled_write_ln("Brk", false);
+            break;
+        case 4:
+            oled_write_ln("Sym", false);
+            break;
+        case 5:
+            oled_write_ln("Num", false);
+            break;
+        case 6:
+            oled_write_ln("Fun", false);
             break;
     }
 }
