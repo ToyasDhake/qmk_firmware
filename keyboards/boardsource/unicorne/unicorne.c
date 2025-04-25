@@ -11,7 +11,7 @@
 // #define PREP_FRAMES 1 // uncomment if >1
 
 #    define TAP_FRAMES 2
-#    define TAP_SPEED 40  // above this wpm value typing animation to trigger
+#    define TAP_SPEED 25  // above this wpm value typing animation to trigger
 
 #    define ANIM_FRAME_DURATION 200  // how long each frame lasts in ms
 // #define SLEEP_TIMER 60000 // should sleep after this period of 0 wpm, needs fixing
